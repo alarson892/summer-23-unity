@@ -1,7 +1,7 @@
 # summer-23-unity
 Video game demo built in 2023 in the Unity Engine
 
-## Developer Setup (Mac)
+## Initial Setup (Mac)
 * Git
 1. In terminal, enter command `brew install git`
 
@@ -12,6 +12,8 @@ Video game demo built in 2023 in the Unity Engine
 * Unity
 1. Download Unity Hub from https://unity.com/download
 2. Run it, and install the latest version of Unity
+3. Projects > Open > Add project from disk
+4. Add project folder from local repo
 
 * Blender
 1. Download Blender from https://www.blender.org/download/
