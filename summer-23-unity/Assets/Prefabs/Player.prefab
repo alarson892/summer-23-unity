@@ -130,3 +130,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 354827218303124783}
+  playerVelocity: {x: 0, y: 0, z: 0}
+  playerSpeed: 4
