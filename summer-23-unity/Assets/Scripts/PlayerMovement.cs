@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 playerVelocity;
     public bool groundedPlayer;
     public float playerSpeed = 2.0f;
+    public float jumpSpeed = -3.0f;
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
 
@@ -35,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         // Changes the height position of the player..
         if (Input.GetButtonDown("Jump") && groundedPlayer)
         {
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * jumpSpeed * gravityValue);
         }
 
         playerVelocity.y += gravityValue * Time.deltaTime;
