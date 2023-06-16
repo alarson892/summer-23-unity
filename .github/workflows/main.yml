@@ -1,12 +1,12 @@
 name: Build project
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
   release:
-      - published
-  workflow_dispatch: {}
+    types: [published]
 
 
 jobs:
