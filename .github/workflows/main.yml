@@ -6,6 +6,7 @@ on:
       - main
   release:
       - published
+  workflow_dispatch: {}
 
 
 jobs:

@@ -2,6 +2,8 @@
 
 Video game demo built in 2023 in the Unity Engine
 
+Build Status:  [![.github/workflows/main.yml](https://github.com/alarson892/summer-23-unity/actions/workflows/main.yml/badge.svg)](https://github.com/alarson892/summer-23-unity/actions/workflows/main.yml)
+
 ## Initial Setup (Mac)
 
 - Git
