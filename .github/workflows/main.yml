@@ -43,6 +43,12 @@ jobs:
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
           projectPath: summer-23-unity
+      # task to set file permissions
+      - name: Set file permissions
+        run: |
+          pwd
+          ls -la build/*
+          chmod -R 777 build/${{ matrix.targetPlatform }}/summer-23-unity
       - uses: actions/upload-artifact@v2
         with:
           name: Build-${{ matrix.targetPlatform }}
