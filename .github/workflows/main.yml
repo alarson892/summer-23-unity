@@ -46,14 +46,11 @@ jobs:
       # task to set file permissions
       - name: Set file permissions
         run: |
-          pwd
-          ls -la .
-          ls -la build/*
           if [ "StandaloneOSX" == "${{ matrix.targetPlatform }}" ]; then
             echo "updating permissions on build/${{ matrix.targetPlatform }}.app"
-            ls -la build/${{ matrix.targetPlatform }}.app/*
+            ls -la build/${{ matrix.targetPlatform }}.app
             chmod -R 777 build/${{ matrix.targetPlatform }}.app
-            ls -la build/${{ matrix.targetPlatform }}.app/*
+            ls -la build/${{ matrix.targetPlatform }}.app
           fi   
       - uses: actions/upload-artifact@v2
         with:
