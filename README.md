@@ -32,12 +32,7 @@ Build Status:  [![.github/workflows/main.yml](https://github.com/alarson892/summ
       unzip Build-StandaloneOSX.zip
 
       # make the binary executable
-      chmod +x StandaloneOSX.app/Contents/MacOS/summer-23-unity
-
-      # launch the game
-      # NOTE: the first time to launch, you will have to go into System Prefs -> Privacy & Security and trust the app
-      # This means you'll end up running open command below twice.
-      open StandaloneOSX.app
+      chmod -R 777 [applicationName].app   
       
       ```
       
