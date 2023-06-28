@@ -19,14 +19,27 @@ Build Status:  [![.github/workflows/main.yml](https://github.com/alarson892/summ
 ## Build
 
 - Building is simple in Unity: File > Build and Run
-- Builds can also be retrieved from this repo under Actions.
-    - Builds come zipped from GitHub, so extract.
-    - OS X build will not have proper permissions, so run the following in terminal:      
-      ```      
-      cd Downloads/    (or wherever you put the app)
-      chmod -R 777 [applicationName].app      
-      ```     
-    - This gives the app the execute permission, which is off by default.
+- Builds can also be found [here](https://github.com/alarson892/summer-23-unity/actions).
+    - Builds come zipped from GitHub, so you'll need to download, extract, set permissions, then execute.
+    - Below are the commands to download and run the game in MacOS via the terminal:      
+      ```
+      # Download a recent build from here: https://github.com/alarson892/summer-23-unity/actions
+      
+      # cd to wherever your dowloads are
+      cd Downloads/
+
+      # upzip the archive
+      unzip Build-StandaloneOSX.zip
+
+      # make the binary executable
+      chmod +x StandaloneOSX.app/Contents/MacOS/summer-23-unity
+
+      # launch the game
+      # NOTE: the first time to launch, you will have to go into System Prefs -> Privacy & Security and trust the app
+      # This means you'll end up running open command below twice.
+      open StandaloneOSX.app
+      
+      ```
       
 ## Docs
 
