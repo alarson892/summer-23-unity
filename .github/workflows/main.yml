@@ -43,12 +43,18 @@ jobs:
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
           projectPath: summer-23-unity
-      # task to set file permissions
-      - name: Set file permissions
-        run: |
-          pwd
-          ls -la build/*
-          chmod -R 777 build/${{ matrix.targetPlatform }}/summer-23-unity
+      # NOTE: I think im having issues doing cross platform builds.
+      # linux doent recognize operations on the build/${{ matrix.targetPlatform }}.app directory for some reason
+      # the fix might be to introduce another build that does MacOC builds on a macos-latest image
+      # see: https://game.ci/docs/github/getting-started#workflow-examples
+      #- name: Set file permissions
+      #  run: |
+      #    if [ "StandaloneOSX" == "${{ matrix.targetPlatform }}" ]; then
+      #      echo "updating permissions on build/${{ matrix.targetPlatform }}.app"
+      #      ls -R build
+      #      chmod -R 777 build/${{ matrix.targetPlatform }}.app
+      #      ls -R build
+      #    fi   
       - uses: actions/upload-artifact@v2
         with:
           name: Build-${{ matrix.targetPlatform }}
