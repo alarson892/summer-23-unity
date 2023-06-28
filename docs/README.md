@@ -8,6 +8,7 @@ The notes below are in no particular order.  It represents a sor of lab journal 
 
 ## Table of contents
 
+- [CI/CD Pipeline](cicd.md)
 - [Player movement and physics](movement.md)
 
 
