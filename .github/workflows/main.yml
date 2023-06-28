@@ -49,6 +49,7 @@ jobs:
           pwd
           ls -la .
           ls -la build/*
+          ls -la build/${{ matrix.targetPlatform }}.app/*
           if [ "StandaloneOSX" == "${{ matrix.targetPlatform }}" ]; then
             echo "updating permissions on build/${{ matrix.targetPlatform }}.app/summer-23-unity"
             chmod -R 777 build/${{ matrix.targetPlatform }}.app/summer-23-unity
