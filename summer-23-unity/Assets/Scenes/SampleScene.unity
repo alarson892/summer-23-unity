@@ -670,6 +670,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2350712799412793398, guid: 2ebda6ac5dbff4095ae90532677a9a28, type: 3}
+      propertyPath: jumpSpeed
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350712799412793398, guid: 2ebda6ac5dbff4095ae90532677a9a28, type: 3}
+      propertyPath: playerSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350712799412793398, guid: 2ebda6ac5dbff4095ae90532677a9a28, type: 3}
+      propertyPath: hangThreshold
+      value: 0.008
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350712799412793398, guid: 2ebda6ac5dbff4095ae90532677a9a28, type: 3}
+      propertyPath: playerGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7065401182570866311, guid: 2ebda6ac5dbff4095ae90532677a9a28, type: 3}
       propertyPath: m_Name
       value: Player
