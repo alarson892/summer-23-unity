@@ -10,9 +10,9 @@ public class CoinPickup : MonoBehaviour
     void OnTriggerEnter(Collider collider){
         Debug.Log(collider.tag);
         if(collider.tag=="Coin"){
-            Destroy(collider.gameObject);
             coins++;
             uc.NewValue(coins);
+            Destroy(collider.gameObject);
         }
     }
 
