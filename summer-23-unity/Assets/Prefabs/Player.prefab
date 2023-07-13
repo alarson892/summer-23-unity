@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7594344826025881871}
   - component: {fileID: 354827218303124783}
   - component: {fileID: 2350712799412793398}
+  - component: {fileID: -747896300547688905}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -131,4 +132,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 354827218303124783}
   playerVelocity: {x: 0, y: 0, z: 0}
+  groundedPlayer: 0
   playerSpeed: 4
+  jumpSpeed: -3
+--- !u!114 &-747896300547688905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7065401182570866311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d20f0d319657249b281ff5a1d46bc09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uc: {fileID: 5612207169620191911, guid: 01dc7c0ac6460441792058072ce39241, type: 3}
+  coins: 0
