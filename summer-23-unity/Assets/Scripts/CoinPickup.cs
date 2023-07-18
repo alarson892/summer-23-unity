@@ -6,9 +6,12 @@ using static UpdateCount;
 public class CoinPickup : MonoBehaviour
 {
     public UpdateCount uc;
+    void Start(){
+        uc = GameObject.Find("CoinCounter").GetComponent<UpdateCount>();
+    }
+
     public int coins=0;
     void OnTriggerEnter(Collider collider){
-        Debug.Log(collider.tag);
         if(collider.tag=="Coin"){
             coins++;
             uc.NewValue(coins);
