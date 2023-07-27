@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private static float downGravity = -50.0f; //gravity after hangThreshold
     private static float hangThreshold = 0.008f;    //distance traveled between Update calls must exceed this to switch to downGravity
     private float oldY; //y position on previous frame
+    private static float kick = -2.0f; // player is kicked downwards this amount when they stop ascending
 
     void Start()
     {
@@ -44,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
                 direction.y += jumpSpeed;
             }
         }else if(oldY==newY){   //cancels vertical momentum at peak and against ceilings
-            direction.y=-1.0f;
+            direction.y=kick;
         }      
         else if(oldY-newY>hangThreshold){    //increases gravity while descending for better-feeling jump
             playerGravity=downGravity;
