@@ -46,6 +46,7 @@ public class PlayerHealth : MonoBehaviour
     public void Kill(){
         currentHealth = maxHealth;
         Debug.Log("Died");
-        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 }
