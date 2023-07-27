@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
-    void Damage(int amount){
+    public void Damage(int amount){
         if(currentHealth-amount<=0){
             Kill();
         }
@@ -38,12 +38,12 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    void Damage(float amount){
+    public void Damage(float amount){
         Damage((int)amount);
     }
 
 
-    void Kill(){
+    public void Kill(){
         currentHealth = maxHealth;
         Debug.Log("Died");
         Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
